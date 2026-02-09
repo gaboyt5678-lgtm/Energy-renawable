@@ -1,1 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  min-height: 70vh;
+  background: linear-gradient(to right, #43a047, #66bb6a);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-buttons a {
+  margin: 10px;
+  padding: 10px 25px;
+  background: white;
+  color: #2e7d32;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* GALLERY */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #2e7d32;
+  color: white;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-item button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #e8f5e9;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-item p {
+  display: none;
+  padding: 15px;
+  background: #f1f1f1;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.socials a {
+  color: white;
+  margin: 0 5px;
+}
+
+/* TOP BUTTON */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+/* RESPONSIVE MENU */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #1b5e20;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
