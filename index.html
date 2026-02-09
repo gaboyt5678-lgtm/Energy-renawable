@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenEnergy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🌱 GreenEnergy</div>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#resources">Resources</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Renewable Energy for a Sustainable Future</h1>
+  <p>Clean, safe and unlimited energy sources</p>
+  <div class="hero-buttons">
+    <a href="#about">Learn More</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>What is Renewable Energy?</h2>
+  <p>
+    Renewable energy comes from natural sources such as the sun, wind, water and biomass.
+    These sources are sustainable and help reduce environmental impact.
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Energy Sources</h2>
+  <div class="grid">
+    <img src="https://source.unsplash.com/600x400/?solar,energy">
+    <img src="https://source.unsplash.com/600x400/?wind,turbine">
+    <img src="https://source.unsplash.com/600x400/?hydropower,dam">
+    <img src="https://source.unsplash.com/600x400/?geothermal,energy">
+  </div>
+</section>
+
+<!-- RESOURCES / TABLE -->
+<section id="resources">
+  <h2>Energy Comparison</h2>
+  <table>
+    <tr>
+      <th>Source</th>
+      <th>Cost</th>
+      <th>Pollution</th>
+      <th>Availability</th>
+    </tr>
+    <tr>
+      <td>Solar</td>
+      <td>Medium</td>
+      <td>Low</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>Wind</td>
+      <td>Low</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Hydro</td>
+      <td>High</td>
+      <td>Low</td>
+      <td>High</td>
+    </tr>
+  </table>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button onclick="toggleFAQ(this)">Is renewable energy expensive?</button>
+    <p>Initial cost may be high, but long-term savings are significant.</p>
+  </div>
+
+  <div class="faq-item">
+    <button onclick="toggleFAQ(this)">Is renewable energy reliable?</button>
+    <p>Yes, modern technology makes renewable energy very reliable.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<button id="topBtn" onclick="scrollTopPage()">↑</button>
+
+<footer>
+  <p>© 2026 GreenEnergy</p>
+  <div class="socials">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+  </div>
+  <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
